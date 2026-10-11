@@ -1,2 +1,6 @@
 ["1.8.1"]
 git-tree-sha1 = "ce84651b37e056c38a3ce3bc3c3f0bfcdbc561bd"
+yanked = true
+
+["1.8.2"]
+git-tree-sha1 = "cce6644f9d7c7ecddd9249abe7fbbfa326702295"

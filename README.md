@@ -11,7 +11,7 @@ Pkg.Registry.add("https://github.com/Leonisaurov/TermuxRegistry")
 
 | Package | Version | Why |
 | --- | --- | --- |
-| `JLLWrappers` | 1.8.1 | On a bionic host `select_platform` finds no wrapper (a different `libc` disqualifies the match) and the code only does `@debug`, so every JLL silently leaves its products undefined. The fork falls back to the wrapper for the same `arch` and `os`, preferring glibc. |
+| `JLLWrappers` | 1.8.2 | On a bionic host `select_platform` finds no wrapper (a different `libc` disqualifies the match) and the code only does `@debug`, so every JLL silently leaves its products undefined. The fork falls back to the wrapper for the same `arch` and `os`, preferring glibc. 1.8.1 is yanked: its fallback only ran in the `host_platform !== nothing` branch, which no ordinary JLL takes. |
 
 `Deps.toml` and `Compat.toml` are generated from the fork's own `Project.toml`, **but the
 notation is not the same**: a registry range is a literal `VersionSpec`, so `julia = "1.0.0"`
