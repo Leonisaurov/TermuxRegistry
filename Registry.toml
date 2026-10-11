@@ -1,0 +1,12 @@
+name = "TermuxRegistry"
+uuid = "70019412-ac2a-4944-9467-8a4b5a4e6500"
+repo = "https://github.com/Leonisaurov/TermuxRegistry.git"
+description = """
+Registry for the Termux/Android (bionic) Julia port.  It holds forks of General packages that
+need a change for a host whose HostPlatform() reports libc="bionic"; the fork keeps the same
+UUID, so the resolver simply sees a higher version and prefers it.  Each entry documents what
+the patch is and where its measurement lives.
+"""
+
+[packages]
+692b3bcd-3c85-4b1f-b108-f13ce0eb3210 = { name = "JLLWrappers", path = "J/JLLWrappers" }
